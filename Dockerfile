@@ -11,6 +11,8 @@ RUN wget https://d37drm4t2jghv5.cloudfront.net/distributions/${GAMS_MAJOR}.${GAM
     rm linux_x64_64_sfx.exe && \
     mv "gams${GAMS_MAJOR}.${GAMS_MINOR}_linux_x64_64_sfx" "/opt/gams"
 
+RUN echo $gamslice > /opt/gams/gamslice.txt    
+
 RUN pip install jupyterlab pandas tabulate matplotlib && \
     cd /opt/gams/apifiles/Python/api_310 && \
     export SETUPTOOLS_USE_DISTUTILS=stdlib && \
