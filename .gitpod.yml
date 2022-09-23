@@ -11,7 +11,3 @@ ports:
   onOpen: open-preview
 - port: 8888
   onOpen: open-browser
-
-vscode:
-  extensions:
-    - https://github.com/lolow/gams
