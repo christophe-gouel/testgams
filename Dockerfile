@@ -12,7 +12,7 @@ RUN wget https://d37drm4t2jghv5.cloudfront.net/distributions/${GAMS_MAJOR}.${GAM
     mv "gams${GAMS_MAJOR}.${GAMS_MINOR}_linux_x64_64_sfx" "/tmp/gams"
 
 RUN pip install jupyterlab pandas tabulate matplotlib && \
-    cd /opt/gams/apifiles/Python/api_310 && \
+    cd /tmp/gams/apifiles/Python/api_310 && \
     export SETUPTOOLS_USE_DISTUTILS=stdlib && \
     python setup.py install
 
