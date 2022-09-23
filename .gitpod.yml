@@ -2,7 +2,7 @@ image:
   file: Dockerfile
 
 tasks:
-  - init: mkdir ~/.local/share/GAMS && echo -e $gamslice > ~/.local/share/GAMS/gamslice.txt
+  - init: mkdir -p ~/.local/share/GAMS && echo -e $gamslice > ~/.local/share/GAMS/gamslice.txt
 
 ports:
 - port: 8080
