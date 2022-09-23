@@ -16,7 +16,7 @@ RUN pip install jupyterlab pandas tabulate matplotlib && \
     export SETUPTOOLS_USE_DISTUTILS=stdlib && \
     python setup.py install
 
-RUN echo ${gamslice} > /opt/gams/gamslice.txt
+RUN echo -e ${gamslice} > /opt/gams/gamslice.txt
 
 ENV PATH="/opt/gams:${PATH}"
 
