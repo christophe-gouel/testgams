@@ -16,8 +16,6 @@ RUN pip install jupyterlab pandas tabulate matplotlib && \
     export SETUPTOOLS_USE_DISTUTILS=stdlib && \
     python setup.py install
 
-RUN echo -e ${gamslice} > /opt/gams/gamslice.txt
-
 ENV PATH="/opt/gams:${PATH}"
 
 CMD [ "jupyter", "notebook", "--ip=0.0.0.0", "--port=8087", "--allow-root", "--no-browser" ]
