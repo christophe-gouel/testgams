@@ -1,6 +1,9 @@
 image:
   file: Dockerfile
 
+tasks:
+  - init: echo $gamslice > ~/gams/gamslice.txt    
+
 ports:
 - port: 8080
   onOpen: open-preview
