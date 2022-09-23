@@ -14,4 +14,4 @@ ports:
 
 vscode:
   extensions:
-    - lolow.gams
+    - https://github.com/lolow/gams
