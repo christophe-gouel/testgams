@@ -2,7 +2,7 @@ image:
   file: Dockerfile
 
 tasks:
-  - before: printf 'export PATH="/opt/gams:$PATH" >> $HOME/.bashrc && \
+  - before: printf 'export PATH="/opt/gams:$PATH"' >> $HOME/.bashrc && \
             mkdir -p ~/.local/share/GAMS && \
             echo -e $gamslice > ~/.local/share/GAMS/gamslice.txt && \
             exit
