@@ -2,10 +2,10 @@ image:
   file: Dockerfile
 
 tasks:
-  - name: Export gams licence
-    command: mkdir -p ~/.local/share/GAMS && echo -e $gamslice > ~/.local/share/GAMS/gamslice.txt
-  - name: Change PATH to include GAMS PATH
-    command: export PATH="/opt/gams:$PATH"
+  - before: printf 'export PATH="/opt/gams:$PATH" >> $HOME/.bashrc && \
+            mkdir -p ~/.local/share/GAMS && \
+            echo -e $gamslice > ~/.local/share/GAMS/gamslice.txt && \
+            exit
 
 ports:
 - port: 8080
