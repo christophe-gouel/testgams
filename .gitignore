@@ -1,4 +1,8 @@
 # GAMS
 *.g00
 *.gdx
+*.log
 *.lst
+
+# Jupyter
+*-checkpoint.ipynb
