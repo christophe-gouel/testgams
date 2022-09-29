@@ -3,9 +3,9 @@ image:
 
 tasks:
   - before: |
-    printf 'export PATH="/opt/gams:$PATH"' >> $HOME/.bashrc 
-    mkdir -p $HOME/.local/share/GAMS
-    echo -e $gamslice > $HOME/.local/share/GAMS/gamslice.txt
+      printf 'export PATH="/opt/gams:$PATH"' >> $HOME/.bashrc 
+      mkdir -p $HOME/.local/share/GAMS
+      echo -e $gamslice > $HOME/.local/share/GAMS/gamslice.txt
 
 ports:
 - port: 8080
